@@ -1,0 +1,16 @@
+div{
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 1%;
+}
+hr {
+    border-top: 3px solid black;
+}
+#crud {
+    margin-top: 11.5%;
+    margin-bottom: 11.5%;
+}
+#crud > p{
+    padding-top: 2%;
+}

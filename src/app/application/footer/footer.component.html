@@ -1,0 +1,58 @@
+<footer class="pt-4 bg-dark">
+
+    <div class="container-fluid text-center text-white">
+        <div class="row">
+            <div class="col">
+                <a [routerLink]="['/home']">
+                    <h5>Retourner en haut</h5>
+                </a>
+            </div>
+
+            <div class="col" id="reseauSociaux">
+              <h5>Suivez-nous</h5>
+              <a href="" class="fab fa-facebook fa-2x"></a>
+              <a href="" class="fab fa-twitter fa-2x text-info"></a>
+              <a href="" class="fab fa-youtube fa-2x text-danger"></a>
+            </div>
+
+            <div class="col">
+                <h5>Tutoriels</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                      <a  [routerLink]="['/tutoriel', 1]">Mini tutoriel Angular 10</a>
+                    </li>
+                    <li>
+                      <a [routerLink]="['/tutoriel', 2]">Mini tutoriel Crud</a>
+                    </li>
+                    <li>
+                      <a [routerLink]="['/tutoriel', 3]">Mini tutoriel des relations</a>
+                    </li>
+                    <li>
+                      <a [routerLink]="['/tutoriel', 4]">Mini tutoriel</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col">
+
+                <h5>Autres liens</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                      <a [routerLink]="['/formulaire']">Formulaire</a>
+                    </li>
+                    <li>
+                      <a [routerLink]="['/crud']">Crud</a>
+                    </li>
+                    <li>
+                      <a [routerLink]="['/fun']">Fun</a>
+                    </li>
+                    <li>
+                      <a [routerLink]="['/contact']">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

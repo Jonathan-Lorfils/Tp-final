@@ -1,0 +1,24 @@
+h1 {
+    font-size: 55px;
+    margin-top: 10%;
+}
+#main {
+    border-top: 3px solid white;
+    margin-bottom: 5%;
+}
+p {
+    font-size: 20px;
+}
+.container{
+    margin-top: 11%;
+    margin-bottom: 10%;
+}
+#facebook{
+    background-color: #3b5998;
+}
+#twitter{
+    background-color: #1DA1F2;;
+}
+#youtube{
+    background-color:#FF0000;
+}

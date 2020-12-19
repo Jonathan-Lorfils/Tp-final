@@ -1,0 +1,34 @@
+{
+  "ClientsLocations": [
+    {
+      "first_name": "Jonathan Money",
+      "last_name": "Lorfils",
+      "adresseCourriel": "jonathan.11911@gmail.com",
+      "numeroPermisConduire": "1234567891232",
+      "debutLocation": "2020-12-16",
+      "finLocation": "2020-12-16",
+      "notes": null,
+      "id": 2
+    },
+    {
+      "first_name": "Jonathan",
+      "last_name": "Alan Lorfils",
+      "adresseCourriel": "jonathan.11911@gmail.com",
+      "numeroPermisConduire": "1234567890123",
+      "debutLocation": "2020-12-10",
+      "finLocation": "2020-12-16",
+      "notes": null,
+      "id": 3
+    },
+    {
+      "first_name": "Doe",
+      "last_name": "John",
+      "adresseCourriel": "email@jo.com",
+      "numeroPermisConduire": "1234567890123",
+      "debutLocation": "2020-12-17",
+      "finLocation": "2020-12-09",
+      "notes": null,
+      "id": 4
+    }
+  ]
+}

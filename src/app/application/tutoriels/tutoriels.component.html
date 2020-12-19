@@ -1,0 +1,153 @@
+<ng-container [ngSwitch]="myParametre">
+    <ng-container *ngSwitchCase="1">
+        <div class="container">
+            <h1>Mini tutoriel Angular 10</h1>
+            <hr>
+            <h3>Quelques informations</h3>
+            <p>Angular est tout d’abord apparu en 2010 pour la première fois, avant de changer de nom pour AngularJS. Il va falloir par la suite attendre jusqu’à 2016 pour qu’une version Angular 2 apparaisse en 2016. Développé par Google, il permet la création de Single Page Applications et d’application web.</p>
+            <h3>Création de projet </h3>
+            <p>Afin de créer votre premier projet Angular il vous faudra un Node.js, Npm et Git : <br>
+            Node.js : C’est un moteur Javascript permettant de faire le service, la création et le regroupement d’application et bien plus. <br>
+            Npm : C’est un gestionnaire qui est de base inclut dans le fichier Node.js. Il permet de télécharger et d’installer les bibliothèques nécessaires pour utiliser l’application web. <br>
+            Git : C’est un client permettant de faire le lien entre votre projet et un système de contrôle de version distribué. Il peut-être utile si vous souhaitez par exemple upload votre site sur github. <br>
+            Pour commencer à l’utiliser créer un dossier (« espace de travail ») dans lequel vous comptez mettre tous vos projet Angular. Lance git dans ce dossier puis entrer : <br>
+            npm install <br>
+            Pour installer et configure le serveur Json entrer : <br>
+            Npm i g json-server <br>
+            Npm I faker <br>
+            Utiliser la commande npm audit fix en cas d’erreur lors de l’installation <br>
+            </p>
+            <h3>Quelques commandes pour vous aider à créer votre premier projet</h3>
+            <p> 
+                Ng n [nom] – pour créer votre projet <br>
+                Ng n [nom] –-routing -pour créer un projet utilisant un système de route <br>
+                Npm install bootstrap – installer bootstrap <br>
+                Ng g c [nom du composant] -pour creer un composant il faut le faire dans le bon dossier <br>
+                Ng g s [nom du service] -pour générer un service <br>
+                Ng g c [nom de la classe] pour créer une classe   <br>
+                Code . -lancer votre projet dans visual studio <br>
+                Npm start – lancer votre projet <br>
+                </p>
+            <p></p>
+        </div>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="2">
+        <div class="container" id="crud">
+            <h1>Mini tutoriel Crud</h1>
+            <hr>
+            <p>L'acronyme C.R.U.D signifie en anglais Create, Read, Update et Delete. Ceux sont les 4 opérations de base que doivent pouvoir effectuer un Crud.
+                On utilise le CRUD en créant un service GenericService qui prend comme paramètres un Objet T et un ID. Cela permet d’utiliser ce service pour faire ces quatre opérations sur n’importe quel objet créer. Cela peut être un avion, un client, des chiens peu importe le CRUD peut prendre n’importe quel objet et avec une id faire l’une des quatre actions de bases. L’ID est également important comme paramètre, car il permet de viser l’objet sur lequel on veut effectuer l’action.
+                Le C permet de créer un Objet T. Le R permet d’afficher les données/les lire. Update permet de modifier les données de l’objet, cela peut être l’âge d’un homme, la taille… D pour delete afin de pouvoir supprimer l’objet T. 
+            </p>
+        </div>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="3">
+        <div>
+            <h1>Mini tutoriel Relations</h1>
+            <hr>
+            <h3>Tableau des conversions</h3>
+                <div class="row">
+                  <div class="col-12">
+                      <table class="table table-image">
+                        <thead>
+                          <tr>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Explication</th>
+                            <th scope="col">Image</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Association</th>
+                            <td>L’Association : Une association est lorsque A utilise B. </td>
+                            <td class="w-25">
+                                <img src="../../../assets/images/association.PNG" class="img-fluid img-thumbnail">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Héritage</th>
+                            <td>Lorsque l’objet B hérite de l’objet A cela signifie que B va prendre les variables de la classe Parent A puis va par la suite rajoute à celles-ci ses propres variables. On peut imaginer A comme étant un Parent et B un enfant qui va prendre des caractéristiques de ses parents A mais aussi avoir ses propres caractéristiques.</td>
+                            <td class="w-25">
+                                <img src="" class="img-fluid img-thumbnail">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">L’Implémentation</th>
+                            <td>Signifie que l’interface A implémente l’interface B</td>
+                            <td class="w-25">
+                                <img src="../../../assets/images/implementation.PNG" class="img-fluid img-thumbnail">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">L’Agrégation</th>
+                            <td>Cela signifie que A est un attribut de la classe B mais qu’il n’a pas besoin d’être instancier du constructeur de B. Par exemple : Un appartement A qui contient des meubles B. Un appartement n’a pas besoin de meuble pour être un appartement.</td>
+                            <td class="w-25">
+                                <img src="../../../assets/images/agregation.PNG" class="img-fluid img-thumbnail">
+                            </td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">La Composition</th>
+                             <td>Cela signifie que A est un attribut de la classe B qui doit être obligatoirement instancié dans le constructeur B. Par exemple : Un appartement A n’est pas un appartement sans un toit B. B doit être instancié lorsqu’on utilise A.</td>
+                            <td class="w-25">
+                                <img src="../../../assets/images/composition.PNG" class="img-fluid img-thumbnail">
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>   
+                  </div>
+                </div>
+              </div>
+
+              <hr>
+              <div class="row">
+                <div class="col-12">
+                    <h3>Tableau des associations</h3>
+                    <table class="table table-image">
+                      <thead>
+                        <tr>
+                          <th scope="col">Nom</th>
+                          <th scope="col">Explication</th>
+                          <th scope="col">Image</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">L’association 1 à 1 </th>
+                          <td>La classe A est en relation 1 à 1 avec la classe B. Cela signifie que A doit devenir un attribut de B ou l’inverse.</td>
+                          <td class="w-25">
+                              <img src="../../../assets/images/1to1.PNG" class="img-fluid img-thumbnail">
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">L’association 1 à plusieurs </th>
+                          <td>La classe A à un attribut de type B dans sa classe.</td>
+                          <td class="w-25">
+                              <img src="../../../assets/images/1tomany.PNG" class="img-fluid img-thumbnail">
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">L’association plusieurs à plusieurs </th>
+                          <td>Il faut créer une classe AB qui aura un attribut de chaque classe (un attribut de A et un attribut de B).</td>
+                          <td class="w-25">
+                              <img src="../../../assets/images/manytomany.PNG" class="img-fluid img-thumbnail">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>   
+                </div>
+              </div>
+
+              
+    </ng-container>
+
+    <ng-container *ngSwitchDefault>
+        <div>
+            <a [routerLink]="['/error']">name</a>
+        </div>
+    </ng-container>
+
+
+</ng-container>
