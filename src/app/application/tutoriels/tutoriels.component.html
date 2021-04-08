@@ -63,7 +63,7 @@
                             <th scope="row">Association</th>
                             <td>L’Association : Une association est lorsque A utilise B. </td>
                             <td class="w-25">
-                                <img src="../../../assets/images/association.PNG" class="img-fluid img-thumbnail">
+                                <img [src]="['assets/images/association.PNG']" class="img-fluid img-thumbnail">
                             </td>
                           </tr>
                           <tr>
@@ -77,14 +77,14 @@
                             <th scope="row">L’Implémentation</th>
                             <td>Signifie que l’interface A implémente l’interface B</td>
                             <td class="w-25">
-                                <img src="../../../assets/images/implementation.PNG" class="img-fluid img-thumbnail">
+                                <img [src]="['assets/images/implementation.PNG']" class="img-fluid img-thumbnail">
                             </td>
                           </tr>
                           <tr>
                             <th scope="row">L’Agrégation</th>
                             <td>Cela signifie que A est un attribut de la classe B mais qu’il n’a pas besoin d’être instancier du constructeur de B. Par exemple : Un appartement A qui contient des meubles B. Un appartement n’a pas besoin de meuble pour être un appartement.</td>
                             <td class="w-25">
-                                <img src="../../../assets/images/agregation.PNG" class="img-fluid img-thumbnail">
+                                <img [src]="['assets/images/agregation.PNG']" class="img-fluid img-thumbnail">
                             </td>
                             
                           </tr>
@@ -92,7 +92,7 @@
                             <th scope="row">La Composition</th>
                              <td>Cela signifie que A est un attribut de la classe B qui doit être obligatoirement instancié dans le constructeur B. Par exemple : Un appartement A n’est pas un appartement sans un toit B. B doit être instancié lorsqu’on utilise A.</td>
                             <td class="w-25">
-                                <img src="../../../assets/images/composition.PNG" class="img-fluid img-thumbnail">
+                                <img [src]="['assets/images/composition.PNG']"  class="img-fluid img-thumbnail">
                             </td>
                           </tr>
                         </tbody>
@@ -118,21 +118,21 @@
                           <th scope="row">L’association 1 à 1 </th>
                           <td>La classe A est en relation 1 à 1 avec la classe B. Cela signifie que A doit devenir un attribut de B ou l’inverse.</td>
                           <td class="w-25">
-                              <img src="../../../assets/images/1to1.PNG" class="img-fluid img-thumbnail">
+                              <img [src]="['assets/images/1to1.PNG']" class="img-fluid img-thumbnail">
                           </td>
                         </tr>
                         <tr>
                           <th scope="row">L’association 1 à plusieurs </th>
                           <td>La classe A à un attribut de type B dans sa classe.</td>
                           <td class="w-25">
-                              <img src="../../../assets/images/1tomany.PNG" class="img-fluid img-thumbnail">
+                              <img [src]="['assets/images/1tomany.PNG']" class="img-fluid img-thumbnail">
                           </td>
                         </tr>
                         <tr>
                           <th scope="row">L’association plusieurs à plusieurs </th>
                           <td>Il faut créer une classe AB qui aura un attribut de chaque classe (un attribut de A et un attribut de B).</td>
                           <td class="w-25">
-                              <img src="../../../assets/images/manytomany.PNG" class="img-fluid img-thumbnail">
+                              <img [src]="['assets/images/manytomany.PNG']" class="img-fluid img-thumbnail">
                           </td>
                         </tr>
                       </tbody>
